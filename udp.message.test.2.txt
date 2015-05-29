@@ -1,0 +1,11 @@
+REGISTER sip:46.101.55.90 SIP/2.0
+Via: SIP/2.0/UDP 192.168.1.46:54550;branch=z9hG4bK-mytestbranch2;rport
+Max-Forwards: 70
+Contact: <sip:1111@192.168.1.46:54550>;expires=0
+To: "1111"<sip:1111@46.101.55.90>
+From: "1111"<sip:1111@46.101.55.90>;tag=1111
+Call-ID: mytestrandomcallidaaaaaaaaaaag
+CSeq: 2 REGISTER
+Allow: SUBSCRIBE, NOTIFY, INVITE, ACK, CANCEL, BYE, REFER, INFO, MESSAGE
+User-Agent: X-Lite 4.8.3 76464-d355af21-W6.1
+Content-Length: 0
