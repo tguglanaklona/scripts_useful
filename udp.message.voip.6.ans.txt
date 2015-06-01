@@ -1,0 +1,9 @@
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.1.51:54234;received=83.220.51.235;branch=z9hG4bK-524287-1---022f37546da0772f;rport=1026
+To: "87299555"<sip:87299555@voiptalk.org>;tag=c97b4d1cb1f3d0da549e06a8d482ef63.e51f
+From: "87299555"<sip:87299555@voiptalk.org>;tag=b614452c
+Call-ID: 76464Y2VhZDFmZGY4ZjVhZjE2NmQ2ZmJhMDhkYTljYzRjOGU
+CSeq: 6 REGISTER
+Contact: <sip:87299555@83.220.51.235:1052;rinstance=5d8f2ad2dcf4b604>;expires=3433, <sip:87299555@83.220.51.235:1026;rinstance=d0732c0ce1f0835d>;expires=3600
+Server: OpenSIPS (1.5.3-notls (x86_64/linux))
+Content-Length: 0

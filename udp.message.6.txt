@@ -1,17 +1,9 @@
-SUBSCRIBE sip:1000@83.220.51.235:2090;rinstance=c953b71647d0fa66 SIP/2.0
-Record-Route: <sip:46.101.55.90;lr=on>
+SIP/2.0 489 Event Package Not Supported
 Via: SIP/2.0/UDP 46.101.55.90;branch=z9hG4bK9cc3.6d993cd5.1
 Via: SIP/2.0/UDP 192.168.1.46:54550;received=83.220.51.235;branch=z9hG4bK-524287-1---04f0f37143d74229;rport=2090
-Max-Forwards: 69
-Contact: <sip:1000@83.220.51.235:2090;rinstance=c953b71647d0fa66>
-To: <sip:1000@46.101.55.90>
+To: <sip:1000@46.101.55.90>;tag=33fd6077
 From: "1000"<sip:1000@46.101.55.90>;tag=123dc201
 Call-ID: 76464ZTllMzVmZWExMzEyZGY3ZDgwNDZiYTFiZmQ4MGQ0OTt
 CSeq: 1 SUBSCRIBE
-Expires: 300
-Accept: application/simple-message-summary
-Allow: SUBSCRIBE, NOTIFY, INVITE, ACK, CANCEL, BYE, REFER, INFO, MESSAGE
-User-Agent: X-Lite 4.8.3 76464-d355af21-W6.1
-Event: message-summary
+User-Agent: X-Lite release 4.8.3 stamp 76464
 Content-Length: 0
-

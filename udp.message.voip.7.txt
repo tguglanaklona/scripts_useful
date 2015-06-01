@@ -1,0 +1,14 @@
+SUBSCRIBE sip:87299555@voiptalk.org SIP/2.0
+Via: SIP/2.0/UDP 192.168.1.51:54234;branch=z9hG4bK-524287-1---7da4d629e5220500;rport
+Max-Forwards: 70
+Contact: <sip:87299555@83.220.51.235:1026;rinstance=d0732c0ce1f0835d>
+To: <sip:87299555@voiptalk.org>
+From: "87299555"<sip:87299555@voiptalk.org>;tag=a9226703
+Call-ID: 76464ZjZjZWQyZTUyMTFlOWJkYzE5YTQ3MDE5ODBiOTY0OWQ
+CSeq: 1 SUBSCRIBE
+Expires: 300
+Accept: application/simple-message-summary
+Allow: SUBSCRIBE, NOTIFY, INVITE, ACK, CANCEL, BYE, REFER, INFO, MESSAGE
+User-Agent: X-Lite 4.8.3 76464-d355af21-W6.1
+Event: message-summary
+Content-Length: 0

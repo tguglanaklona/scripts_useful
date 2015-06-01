@@ -1,0 +1,49 @@
+REGISTER sip:voiptalk.org SIP/2.0
+Via: SIP/2.0/UDP 192.168.1.51:58181;branch=z9hG4bK-524287-1---3e0525280efd4b4b;rport
+Max-Forwards: 70
+Contact: <sip:8729955@192.168.1.51:58181;rinstance=c700ea83825d665a>
+To: "87299555"<sip:8729955@voiptalk.org>
+From: "87299555"<sip:8729955@voiptalk.org>;tag=cc88a77e
+Call-ID: 76464MmEzMGMwNTg5MTkzYmJhODg4MTAxOTk3MjdmOTYzYjM
+CSeq: 1 REGISTER
+Expires: 3600
+Allow: SUBSCRIBE, NOTIFY, INVITE, ACK, CANCEL, BYE, REFER, INFO, MESSAGE
+User-Agent: X-Lite 4.8.3 76464-d355af21-W6.1
+Content-Length: 0
+
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.51:58181;received=83.220.51.235;branch=z9hG4bK-524287-1---3e0525280efd4b4b;rport=10011
+To: "87299555"<sip:8729955@voiptalk.org>;tag=c97b4d1cb1f3d0da549e06a8d482ef63.0a12
+From: "87299555"<sip:8729955@voiptalk.org>;tag=cc88a77e
+Call-ID: 76464MmEzMGMwNTg5MTkzYmJhODg4MTAxOTk3MjdmOTYzYjM
+CSeq: 1 REGISTER
+WWW-Authenticate: Digest realm="voiptalk.org", nonce="55689f600000298d3e9135241cb39593c69a12ca1cbf7f42"
+Server: OpenSIPS (1.5.3-notls (x86_64/linux))
+Content-Length: 0
+
+
+REGISTER sip:voiptalk.org SIP/2.0
+Via: SIP/2.0/UDP 192.168.1.51:58181;branch=z9hG4bK-524287-1---7ea25944c8ccbb35;rport
+Max-Forwards: 70
+Contact: <sip:8729955@192.168.1.51:58181;rinstance=c700ea83825d665a>
+To: "87299555"<sip:8729955@voiptalk.org>
+From: "87299555"<sip:8729955@voiptalk.org>;tag=cc88a77e
+Call-ID: 76464MmEzMGMwNTg5MTkzYmJhODg4MTAxOTk3MjdmOTYzYjM
+CSeq: 2 REGISTER
+Expires: 3600
+Allow: SUBSCRIBE, NOTIFY, INVITE, ACK, CANCEL, BYE, REFER, INFO, MESSAGE
+User-Agent: X-Lite 4.8.3 76464-d355af21-W6.1
+Authorization: Digest username="87299555",realm="voiptalk.org",nonce="55689f600000298d3e9135241cb39593c69a12ca1cbf7f42",uri="sip:voiptalk.org",response="09ee832d352b20dc84c8857efc34c213",algorithm=MD5
+Content-Length: 0
+
+
+SIP/2.0 403 Forbidden auth ID
+Via: SIP/2.0/UDP 192.168.1.51:58181;received=83.220.51.235;branch=z9hG4bK-524287-1---7ea25944c8ccbb35;rport=10011
+To: "87299555"<sip:8729955@voiptalk.org>;tag=c97b4d1cb1f3d0da549e06a8d482ef63.5b75
+From: "87299555"<sip:8729955@voiptalk.org>;tag=cc88a77e
+Call-ID: 76464MmEzMGMwNTg5MTkzYmJhODg4MTAxOTk3MjdmOTYzYjM
+CSeq: 2 REGISTER
+Server: OpenSIPS (1.5.3-notls (x86_64/linux))
+Content-Length: 0
+

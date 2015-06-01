@@ -1,0 +1,9 @@
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.1.51:54234;received=83.220.51.235;branch=z9hG4bK-524287-1---59596e76dc0e0d36;rport=1026
+To: "87299555"<sip:87299555@voiptalk.org>;tag=c97b4d1cb1f3d0da549e06a8d482ef63.cc27
+From: "87299555"<sip:87299555@voiptalk.org>;tag=b614452c
+Call-ID: 76464Y2VhZDFmZGY4ZjVhZjE2NmQ2ZmJhMDhkYTljYzRjOGU
+CSeq: 1 REGISTER
+WWW-Authenticate: Digest realm="voiptalk.org", nonce="55689e5000015685d91aa0b38c70af856442164861dee593"
+Server: OpenSIPS (1.5.3-notls (x86_64/linux))
+Content-Length: 0

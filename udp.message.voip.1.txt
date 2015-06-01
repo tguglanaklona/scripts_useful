@@ -1,0 +1,12 @@
+REGISTER sip:voiptalk.org SIP/2.0
+Via: SIP/2.0/UDP 192.168.1.51:54234;branch=z9hG4bK-524287-1---59596e76dc0e0d36;rport
+Max-Forwards: 70
+Contact: <sip:87299555@192.168.1.51:54234;rinstance=777cc18e7e531e48>
+To: "87299555"<sip:87299555@voiptalk.org>
+From: "87299555"<sip:87299555@voiptalk.org>;tag=b614452c
+Call-ID: 76464Y2VhZDFmZGY4ZjVhZjE2NmQ2ZmJhMDhkYTljYzRjOGU
+CSeq: 1 REGISTER
+Expires: 3600
+Allow: SUBSCRIBE, NOTIFY, INVITE, ACK, CANCEL, BYE, REFER, INFO, MESSAGE
+User-Agent: X-Lite 4.8.3 76464-d355af21-W6.1
+Content-Length: 0

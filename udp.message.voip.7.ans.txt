@@ -1,0 +1,8 @@
+SIP/2.0 500 Service Unavailable
+Via: SIP/2.0/UDP 192.168.1.51:54234;received=83.220.51.235;branch=z9hG4bK-524287-1---7da4d629e5220500;rport=1026
+To: <sip:87299555@voiptalk.org>;tag=c97b4d1cb1f3d0da549e06a8d482ef63.9faa
+From: "87299555"<sip:87299555@voiptalk.org>;tag=a9226703
+Call-ID: 76464ZjZjZWQyZTUyMTFlOWJkYzE5YTQ3MDE5ODBiOTY0OWQ
+CSeq: 1 SUBSCRIBE
+Server: OpenSIPS (1.5.3-notls (x86_64/linux))
+Content-Length: 0
