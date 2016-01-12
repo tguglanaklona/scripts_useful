@@ -19,3 +19,8 @@ $sock->send($whole_file) or die "Send error: $!\n";
 
 #$sock->send("A"x100 . " " . "B"x100 . " " . "C"x100 . "\r\nVia") or die 
 "Send error: $!\n";
+
+my $answer = <$sock>;
+print $answer;
+
+$sock->close();
