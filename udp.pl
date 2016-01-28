@@ -6,7 +6,7 @@ use strict;
 my $sock = IO::Socket::INET->new(
     Proto    => 'udp',
     PeerPort => 5060,
-    PeerAddr => '46.101.55.90',
+    PeerAddr => '178.62.35.87',
 ) or die "Could not create socket: $!\n";
 
 my $filename = $ARGV[0]; #'udp.message.txt';

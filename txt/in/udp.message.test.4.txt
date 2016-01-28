@@ -1,0 +1,14 @@
+SUBSCRIBE sip:1000@178.62.35.87 SIP/2.0
+Via: SIP/2.0/UDP 192.168.1.46:54550;branch=z9hG4bK-mytestbranch4;rport
+Max-Forwards: 70
+Contact: <sip:1000@83.220.51.235:2090;rinstance=mytestrinstance>
+To: <sip:1000@178.62.35.87>
+From: "1111"<sip:1000@178.62.35.87>;tag=2222
+Call-ID: my2test2random2call2id2aaaaaaah
+CSeq: 1 SUBSCRIBE
+Expires: 300
+Accept: application/simple-message-summary
+Allow: SUBSCRIBE, NOTIFY, INVITE, ACK, CANCEL, BYE, REFER, INFO, MESSAGE
+User-Agent: X-Lite 4.8.3 76464-d355af21-W6.1
+Event: message-summary
+Content-Length: 0
