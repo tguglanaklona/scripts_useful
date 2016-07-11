@@ -1,4 +1,8 @@
 #include "stdafx.h"
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string>
 
 void text2ascii() { // text.txt -> xtext.txt
 	unsigned char ch = 'A';
@@ -30,3 +34,7 @@ unsigned int char2ascii(char ch) { //return Dec ascii
 	return unsigned int(ch);
 }
 
+// print as Hex
+std::ofstream out("out.txt");
+unsigned int ch = 'A';
+out << std::hex << key[i] << std::endl;
