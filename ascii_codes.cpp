@@ -25,3 +25,8 @@ void ascii2text() { // ptext.txt -> ctext.txt
 	fclose(fpOut);
 	fclose(fpIn);
 }
+
+unsigned int char2ascii(char ch) { //return Dec ascii
+	return unsigned int(ch);
+}
+
