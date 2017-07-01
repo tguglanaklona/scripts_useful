@@ -29,7 +29,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	uvector.erase(std::unique(uvector.begin(), uvector.end()), uvector.end());
 
 	std::vector<std::string>::iterator it;
-	std::ofstream outfile("../_OneMonthNum_unique.txt");
+	std::ofstream outfile("../result_file.txt");
 	for (it=uvector.begin(); it!=uvector.end(); ++it){
 		outfile << *it << ' ' << std::count(cpyvector.begin(), cpyvector.end(), *it) << '\n';
 	}
