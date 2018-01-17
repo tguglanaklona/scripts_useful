@@ -103,7 +103,6 @@ foreach ($r in $res){ #//Print All Sorted
 
 
 
-
 ###//Notes
 #$testfile = "\\192.168.2.10\control_system\00 Переписка\Шаблон письма новый.docx"
 #start-process -FilePath $testfile.fullName -Verb Print
