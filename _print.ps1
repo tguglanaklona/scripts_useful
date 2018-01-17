@@ -16,15 +16,18 @@ foreach ($file in $files){
 		if (($fullString.SubString($fullString.length-3,3) -eq "doc") -or ($fullString.SubString($fullString.length-4,4) -eq "docx") -or ($fullString.SubString($fullString.length-3,3) -eq "pdf")){ #//word & pdf
 
 			$checkPages = $true;
-			if (($fullString.SubString($fullString.length-3,3) -eq "doc") -or ($fullString.SubString($fullString.length-4,4) -eq "docx")){ #//check N of Pages
-				$fullString
+			if (($fullString.SubString($fullString.length-3,3) -eq "doc") -or ($fullString.SubString($fullString.length-4,4) -eq "docx")){ #//check N of Pages (BLOCK)
+				"Counting pages: " + $fullString
 				$objWord = New-Object -ComObject word.application
-				$objWord.visible = $true #
+				$objWord.visible = $false #$true
 				$objDoc = $objWord.documents.open($fullString)
 				$nPages = $objDoc.ComputeStatistics(2) 
-				$nPages
 				$objDoc.Close();
 				$objWord.Quit()
+				if ($nPages>=16){
+					$checkPages = $false;
+				}
+				$nPages
 			}
 
 			if ($checkPages){
@@ -84,18 +87,18 @@ foreach ($file in $files){
 
 $res = $dates.GetEnumerator() | Sort Value
 $res
-#//$res[900].Name
 
-$fullName = $res[900].Name
-$fullName
+$res.length
 
-$objWord = New-Object -ComObject word.application
-$objWord.visible = $true 
-$objDoc = $objWord.documents.open($fullname)
-$nPages = $objDoc.ComputeStatistics(2) 
-$nPages
-$objDoc.Close();
-$objWord.Quit()
+
+
+foreach ($r in $res){ #//Print All Sorted
+	start-process -FilePath $r.Name -Verb Print
+}
+"Done"
+
+
+
 
 
 
