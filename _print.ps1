@@ -6,10 +6,10 @@
 #cd $ScriptPath;
 
 $files = Get-ChildItem -Path "\\192.168.2.10\control_system\00 Переписка\" -Recurse -ErrorAction SilentlyContinue -Force; # | sort
-$dates = @{}; $i = 0;
+$dates = @{}; $i = 0; $pgsWrd = 0;
 foreach ($file in $files){
 	$fullString = $file.fullName;
-	#$fullString
+	$nPages = 0;
 
 	if (($fullString.SubString($fullString.length-5,1) -eq ".") -or ($fullString.SubString($fullString.length-4,1) -eq ".")){ #//files
 
@@ -24,7 +24,7 @@ foreach ($file in $files){
 				$nPages = $objDoc.ComputeStatistics(2) 
 				$objDoc.Close();
 				$objWord.Quit()
-				if ($nPages>=16){
+				if ($nPages -ge 16){
 					$checkPages = $false;
 				}
 				$nPages
@@ -32,6 +32,7 @@ foreach ($file in $files){
 
 			if ($checkPages){
 		
+				$pgsWrd += $nPages;
 				$a = [regex]"2017?8?\-..\-..";
 				$dateString = $a.Match($fullString);
 				if ($dateString.Captures[0].value){
@@ -79,21 +80,22 @@ foreach ($file in $files){
 		#"this is folder: " + $fullString
 	}
 
-    #start-process -FilePath $file.fullName -Verb Print
     $i += 1;
 }
-
-#$dates
 
 $res = $dates.GetEnumerator() | Sort Value
 $res
 
 $res.length
+"Includes N = Word Pages = "+$pgsWrd
 
-
-
+$counter = 0;
 foreach ($r in $res){ #//Print All Sorted
-	start-process -FilePath $r.Name -Verb Print
+	#start-process -FilePath $r.Name -Verb Print
+	$r.Name
+
+	$counter++;
+	$counter
 }
 "Done"
 
